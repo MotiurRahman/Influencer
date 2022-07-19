@@ -1,0 +1,239 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 50px;
+
+}
+
+/* Header Nav */
+
+.hamIcon {
+    display: none;
+}
+
+.cart-plus_mobile {
+    display: none;
+}
+
+.headerNav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.siteName h1 {
+    font-size: 3vw;
+}
+
+.headerMenu a,
+i {
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+/* End header Nav */
+
+/* Start Header Banner */
+.bannerSection {
+    margin: 50px 0px;
+}
+
+.siteBanner-left button {
+    margin-top: 20px;
+}
+
+.siteBanner-right img {
+    width: 440px;
+    height: 414px;
+}
+
+.siteBanner {
+    display: flex;
+    column-gap: 150px;
+}
+
+.prebookBtn {
+    width: 200px;
+    height: 50px;
+    background-color: #E02C6D;
+    color: white;
+    border: 1px solid tomato;
+    border-radius: 25px;
+    cursor: pointer;
+
+}
+
+/* End Header Banner */
+
+/* Start Company logo Section */
+.companySection {
+    margin: 50px 0px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+
+}
+
+/* End company logo Section */
+
+/* Start popular products section */
+.productSection h1 {
+    text-align: center;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 50px;
+    column-gap: 50px;
+}
+
+.product {
+    box-shadow: 5px 10px 8px #888888;
+}
+
+.product img {
+    width: 100%;
+}
+
+.product h3,
+h4 {
+    margin: 2px 2px;
+}
+
+.rattings {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.fa-star {
+    color: goldenrod;
+}
+
+/* End Popular products section */
+
+/* Start Feature Section */
+
+.featuredSection {
+    margin: 100px 0px;
+}
+
+.feature {
+    display: flex;
+    column-gap: 100px;
+
+}
+
+.featureInfo {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+
+}
+
+.featureInfo a {
+    width: 110px;
+}
+
+.featureImg img {
+    width: 100%;
+}
+
+.joinNow {
+    background-color: #E02C6D;
+    border: 2px solid #E02C6D;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+/* End Feature Section */
+
+/* Footer CSS */
+
+.footerSection {
+    background-color: #AAAAAA;
+}
+
+.footerInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0px;
+}
+
+.footerInfo h1,
+p {
+    margin: 0;
+}
+
+/* Extra small devices (phones, 666px and down) */
+@media only screen and (max-width: 666px) {
+
+    .hamIcon {
+        display: block;
+    }
+
+    .headerMenu {
+        display: none;
+    }
+
+    .cart-plus_mobile {
+        display: block;
+    }
+
+    .siteBanner-left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .siteBanner-left p {
+        text-align: center;
+    }
+
+    .siteBanner {
+        flex-direction: column-reverse;
+    }
+
+    .siteBanner-right img {
+        width: 257px;
+        height: 257px;
+    }
+
+    .companySection {
+        flex-wrap: wrap;
+
+    }
+
+    .products {
+
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .feature {
+        flex-direction: column-reverse;
+
+    }
+
+    .featureInfo {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .featureInfo p {
+        text-align: center;
+    }
+
+    .featureImg img {
+        margin-top: 20px;
+    }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 601px) and (min-width: 768px) {}
